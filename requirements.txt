@@ -1,0 +1,6 @@
+jupyter
+pyserial
+numpy
+matplotlib
+torch
+glob2
