@@ -1,1 +1,0 @@
-vopt +acc=npr -l elaborate.log  -L xil_defaultlib -L xpm -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L axi_protocol_converter_v2_1_27 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.axi4_32_to_axilite xil_defaultlib.glbl -o axi4_32_to_axilite_opt

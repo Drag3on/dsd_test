@@ -1,2 +1,0 @@
-axi_interconnect_1.v,verilog,xil_defaultlib,../../../../../../src/common_ip/axi_interconnect_1/sim/axi_interconnect_1.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

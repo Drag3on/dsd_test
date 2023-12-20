@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../../../src/common_ip/axi_to_apb/sim/axi_to_apb.vhd" \
-
-nosort
