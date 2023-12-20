@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../src/common_ip/axi_to_apb/sim/axi_to_apb.vhd" \
+"../../../../../../src/common_ip/axi_vdma_0/sim/axi_vdma_0.vhd" \
+
+# Do not sort compile order
+nosort

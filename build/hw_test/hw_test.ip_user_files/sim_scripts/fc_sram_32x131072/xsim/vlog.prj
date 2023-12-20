@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../hw_test.gen/sources_1/ip/fc_sram_32x131072/sim/fc_sram_32x131072.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

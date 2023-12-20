@@ -1,0 +1,284 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/hw_test/hw_test.gen/sources_1/ip/fc_sram_32x131072/sim/fc_sram_32x131072.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_sram_32x131072
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/axi_crossbar_1/sim/axi_crossbar_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/axi_interconnect_1/sim/axi_interconnect_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/axi4_32_to_axilite/sim/axi4_32_to_axilite.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi4_32_to_axilite
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/axi_crossbar_0/sim/axi_crossbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_addr_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg_bank
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_w_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_a_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_r_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_w_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_infrastructure
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_row_col
+WARNING: [VRFC 10-8332] begin/end is required for generate-for in this mode of Verilog [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:252]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_col_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_round_robin_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_fi_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_memc_ui_top_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mem_intfc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_group_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_calib_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_if_post_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_of_pre_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_4lanes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_lim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_po_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_oclkdelay_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_prbs_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrcal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl_off_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_prbs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_cc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_edge_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_meta
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_tap_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/mig_dram_mig_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_dram_mig
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/rtl/mig_dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/clk_gen/clk_gen_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/clk_gen/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/Convert_32to8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convert_32to8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/FIFO_64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/FIFO_buffer_64bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_buffer_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/axi_crossbar_0/wrapper/axi_crossbar_0_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_0_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/axi_crossbar_1/wrapper/axi_crossbar_1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/host_decoder/rtl/axi_m_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_m_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/system/rtl/axi_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_subsystem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/conv_module/clk_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_counter_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/clk_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_counter_fc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/pool_module/clk_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_counter_pool
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/compute_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compute_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/conv_module/conv_apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/conv_module/conv_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/conv_module/conv_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_module
+WARNING: [VRFC 10-3380] identifier 'read_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:55]
+WARNING: [VRFC 10-3380] identifier 'cal_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:56]
+WARNING: [VRFC 10-3380] identifier 'send_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:57]
+WARNING: [VRFC 10-3380] identifier 'bram_addr' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:58]
+WARNING: [VRFC 10-3380] identifier 'INPUT_SIZE' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:59]
+WARNING: [VRFC 10-3380] identifier 'OUTPUT_SIZE' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:60]
+WARNING: [VRFC 10-3380] identifier 'send_bram_counter' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:61]
+WARNING: [VRFC 10-3380] identifier 'send_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:129]
+WARNING: [VRFC 10-3380] identifier 'send_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:130]
+WARNING: [VRFC 10-3380] identifier 'send_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:131]
+WARNING: [VRFC 10-3380] identifier 'cal_state' is used before its declaration [C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_module.v:132]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/fc_module/fc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/host_decoder/rtl/host_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module host_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/host_decoder/rtl/host_decoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module host_decoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/interface_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/pool_module/pool_apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pool_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/pool_module/pool_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pool_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/pool_module/pool_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pool_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/receive_debouncing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receive_debouncing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/transmit_debouncing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmit_debouncing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/provided/ip/uart/rtl/uart_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/modules/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main

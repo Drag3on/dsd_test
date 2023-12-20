@@ -1,0 +1,578 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Dec 19 22:12:58 2023
+| Host         : DESKTOP-UA3I8HH running 64-bit major release  (build 9200)
+| Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
+| Design       : main
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 100
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree               | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks                            | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 1          |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
+| DPIR-1    | Warning          | Asynchronous driver check                                        | 39         |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 8          |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain                  | 12         |
+| TIMING-10 | Warning          | Missing property on synchronizer                                 | 1          |
+| TIMING-16 | Warning          | Large setup violation                                            | 15         |
+| TIMING-18 | Warning          | Missing input or output delay                                    | 3          |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects                      | 1          |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF                                | 16         |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock u_interface_top/u_clk_gen/inst/clk_in1 is defined downstream of clock sys_clk_pin and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks sys_clk_pin and clk_100mhz_clk_gen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk_pin] -to [get_clocks clk_100mhz_clk_gen]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks sys_clk_pin and clk_100mhz_clk_gen are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk_pin] -to [get_clocks clk_100mhz_clk_gen]
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock u_interface_top/u_clk_gen/inst/clk_in1 is created on an inappropriate internal pin u_interface_top/u_clk_gen/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, u_interface_top/clk
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1 input pin u_compute_top/u_fc_top/u_fc_module/cal_bram_addr1/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP u_compute_top/u_fc_top/u_fc_module/s_axis_tready1 input pin u_compute_top/u_fc_top/u_fc_module/s_axis_tready1/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE,
+u_interface_top/u_axi_subsystem/u_axi_datapath0/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE
+ (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_vdma0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_vdma0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_vdma0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_vdma0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_vdma1/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_vdma1/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_vdma1/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_vdma1/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_vdma2/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_vdma2/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_axi_vdma2/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_axi_vdma2/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell u_interface_top/u_mig/u_mig_dram_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r1_reg_rep__7/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r1_reg_rep__8/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r1_reg_rep__9/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[0]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[10]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[11]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[1]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[2]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[3]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[4]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[5]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[6]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[7]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[8]/PRE,
+u_interface_top/u_mig/u_mig_dram_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[9]/PRE
+ (the first 15 of 29 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X34Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X36Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X34Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X32Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X35Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X35Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X31Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X33Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X37Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X38Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X36Y127 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X34Y127 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_interface_top/u_mig/u_mig_dram_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.166 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[16]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.174 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[15]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.190 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[18]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.250 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[8]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.264 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[19]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.268 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[11]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.270 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[9]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.281 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[20]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.288 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[17]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.305 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[22]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.311 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[10]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.335 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[14]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.365 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[12]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.398 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[21]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.424 ns between u_compute_top/u_fc_top/u_fc_module/u_fc_sram_32x131072/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK (clocked by clk_100mhz_clk_gen) and u_compute_top/u_fc_top/u_fc_module/one_out_reg[13]/D (clocked by clk_100mhz_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rstn relative to clock(s) sys_clk_pin, u_interface_top/u_clk_gen/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on uart_rx relative to clock(s) u_interface_top/u_clk_gen/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on uart_tx relative to clock(s) u_interface_top/u_clk_gen/inst/clk_in1
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '32' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/common_ip/mig_dram/mig_dram/user_design/constraints/mig_dram.xdc (Line: 346)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[0].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_interface_top/u_mig/u_mig_dram_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

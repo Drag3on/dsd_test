@@ -1,0 +1,12 @@
+
+{ 
+    crc :  2404829492601828130  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L lib_cdc_v1_0_2 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_7 -L lib_fifo_v1_0_16 -L lib_bmg_v1_0_14 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_29 -L axi_vdma_v6_3_15 -L axi_interconnect_v1_7_20 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl" , 
+    buildDate : "Oct 14 2022" , 
+    buildTime : "05:20:55" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2022.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_behav/xsimk.exe\"   \"xsim.dir/tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_1.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_2.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_3.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_4.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_5.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_6.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_7.win64.obj\" \"xsim.dir/tb_behav/obj/xsim_8.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2022.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

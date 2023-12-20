@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Dec 17 16:14:15 2023
+# Process ID: 12496
+# Current directory: C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4664 C:\Users\Jsangwook\Desktop\DSD_Project\dsd-final-project-team11\build\layer_tb\pool_tb\pool_tb.xpr
+# Log file: C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/vivado.log
+# Journal file: C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb\vivado.jou
+# Running On: DESKTOP-UA3I8HH, OS: Windows, CPU Frequency: 2189 MHz, CPU Physical cores: 12, Host memory: 16706 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.xpr
+upgrade_project -migrate_output_products
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {axi_interconnect_0 axi_vdma_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {axi_interconnect_0 axi_vdma_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_interconnect_0/axi_interconnect_0.xci C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_vdma_0/axi_vdma_0.xci}]
+catch { config_ip_cache -export [get_ips -all axi_interconnect_0] }
+catch { config_ip_cache -export [get_ips -all axi_vdma_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_interconnect_0/axi_interconnect_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_vdma_0/axi_vdma_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_interconnect_0/axi_interconnect_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_vdma_0/axi_vdma_0.xci]
+launch_runs axi_interconnect_0_synth_1 axi_vdma_0_synth_1 -jobs 8
+wait_on_run axi_interconnect_0_synth_1
+wait_on_run axi_vdma_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_interconnect_0/axi_interconnect_0.xci] -directory C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.ip_user_files -ipstatic_source_dir C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/modelsim} {questa=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/questa} {riviera=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/riviera} {activehdl=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/src/tb/pool/ip/axi_vdma_0/axi_vdma_0.xci] -directory C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.ip_user_files -ipstatic_source_dir C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/modelsim} {questa=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/questa} {riviera=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/riviera} {activehdl=C:/Users/Jsangwook/Desktop/DSD_Project/dsd-final-project-team11/build/layer_tb/pool_tb/pool_tb.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
